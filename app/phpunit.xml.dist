@@ -1,0 +1,7 @@
+<phpunit bootstrap="vendor/autoload.php" cacheResultFile="var/.phpunit.result.cache">
+    <testsuites>
+        <testsuite name="app">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

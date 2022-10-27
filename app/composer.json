@@ -1,0 +1,22 @@
+{
+    "name": "cha/assignment",
+    "type": "project",
+    "require-dev": {
+        "php": "^8.1",
+        "phpunit/phpunit": "^9.5",
+        "phpstan/phpstan": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "symfony/console": "^6.1"
+    }
+}
