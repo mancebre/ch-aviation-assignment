@@ -1,13 +1,14 @@
 #!/usr/bin/env php
 <?php
 
-require __DIR__.'../../vendor/autoload.php';
+require __DIR__ . '../../vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
+use App\Domain\FlightFactory;
 
 $application = new Application();
 
-$application->add(new \App\Infrastructure\ParseCommand());
+$application->add(new \App\Infrastructure\ParseCommand(new FlightFactory()));
 
 try {
     $application->run();

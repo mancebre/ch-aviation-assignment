@@ -16,6 +16,6 @@ class AirlineLookupTest extends TestCase
 
     public function testLookupFromRegistration(): void
     {
-        $this->assertSame('Alpha Airlines', AirlineLookup::from('HA-AAC'));
+        $this->assertSame('Alpha Airline', AirlineLookup::from('HA-AAC'));
     }
 }

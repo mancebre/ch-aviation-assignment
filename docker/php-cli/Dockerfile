@@ -7,7 +7,7 @@ RUN apk --update add git openssh bash $PHPIZE_DEPS && \
 RUN pecl install xdebug-3.1.5
 
 RUN echo "memory_limit=-1" > "$PHP_INI_DIR/conf.d/memory-limit.ini" \
- && echo "date.timezone=${PHP_TIMEZONE:-UTC}" > "$PHP_INI_DIR/conf.d/date_timezone.ini"
+    && echo "date.timezone=${PHP_TIMEZONE:-UTC}" > "$PHP_INI_DIR/conf.d/date_timezone.ini"
 
 COPY --from=composer:2.4 /usr/bin/composer /usr/bin/composer
 
